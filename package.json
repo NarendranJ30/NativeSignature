@@ -1,0 +1,31 @@
+{
+  "name": "nativelandscapesignature",
+  "widgetName": "NativeLandscapeSignature",
+  "version": "1.0.0",
+  "description": "Landscape view for Signature",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Narendran Jaganathan.",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "./tests/testProject"
+  },
+  "packagePath": "mxtechies",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.18.0"
+  },
+  "dependencies": {
+    "react-native-signature-canvas": "^4.3.0",
+    "react-native-webview": "^11.0.3"
+  }
+}
